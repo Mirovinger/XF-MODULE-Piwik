@@ -4,7 +4,7 @@
   Contacts: http://cyberspace.industries/
   License: LICENSE.ENG.txt
 -->
-<addon addon_id="csiXF_piwik" title="(CSI/XF/MODULE) Piwik" version_string="1.0.0" version_id="1" url="http://cyberspace.industries/" install_callback_class="" install_callback_method="" uninstall_callback_class="" uninstall_callback_method="">
+<addon addon_id="csiXF_piwik" title="(CSI/XF/MODULE) Piwik" version_string="1.0.1" version_id="2" url="http://cyberspace.industries/" install_callback_class="" install_callback_method="" uninstall_callback_class="" uninstall_callback_method="">
   <admin_navigation/>
   <admin_permissions/>
   <admin_style_properties/>
@@ -32,7 +32,7 @@
   <phrases>
     <phrase title="option_csiXF_piwik_trackingCode" version_id="1" version_string="1.0.0"><![CDATA[Код отслеживания]]></phrase>
     <phrase title="option_csiXF_piwik_trackingCode_explain" version_id="1" version_string="1.0.0"><![CDATA[Вставьте код отслеживания, созданный в системе "Piwik".]]></phrase>
-    <phrase title="option_group_csiXF_piwik" version_id="1" version_string="1.0.0"><![CDATA[(CSI/XF) Piwik]]></phrase>
+    <phrase title="option_group_csiXF_piwik" version_id="2" version_string="1.0.1"><![CDATA[(CSI/XF/MODULE) Piwik]]></phrase>
     <phrase title="option_group_csiXF_piwik_description" version_id="1" version_string="1.0.0"><![CDATA[Бесплатная система веб-аналитики с открытым исходным кодом.]]></phrase>
   </phrases>
   <route_prefixes/>
