@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright © 2015 CYBERSPACE Industries. All rights reserved.
+  Contacts: http://cyberspace.industries/
+  License: LICENSE.RUS.txt
+-->
+<addon addon_id="csiXF_piwik" title="(CSI/XF/MODULE) Piwik" version_string="1.0.0" version_id="1" url="http://cyberspace.industries/" install_callback_class="" install_callback_method="" uninstall_callback_class="" uninstall_callback_method="">
+  <admin_navigation/>
+  <admin_permissions/>
+  <admin_style_properties/>
+  <admin_templates/>
+  <admin_template_modifications/>
+  <code_events/>
+  <code_event_listeners/>
+  <cron/>
+  <email_templates/>
+  <email_template_modifications/>
+  <optiongroups>
+    <group group_id="csiXF_piwik" display_order="99999999" debug_only="0"/>
+    <option option_id="csiXF_piwik_trackingCode" edit_format="textbox" data_type="string" can_backup="1">
+      <default_value></default_value>
+      <edit_format_params>rows=10</edit_format_params>
+      <sub_options></sub_options>
+      <relation group_id="csiXF_piwik" display_order="1"/>
+    </option>
+  </optiongroups>
+  <permissions>
+    <permission_groups/>
+    <permissions/>
+    <interface_groups/>
+  </permissions>
+  <phrases>
+    <phrase title="option_csiXF_piwik_trackingCode" version_id="1" version_string="1.0.0"><![CDATA[Код отслеживания]]></phrase>
+    <phrase title="option_csiXF_piwik_trackingCode_explain" version_id="1" version_string="1.0.0"><![CDATA[Вставьте код отслеживания, созданный в системе "Piwik".]]></phrase>
+    <phrase title="option_group_csiXF_piwik" version_id="1" version_string="1.0.0"><![CDATA[(CSI/XF) Piwik]]></phrase>
+    <phrase title="option_group_csiXF_piwik_description" version_id="1" version_string="1.0.0"><![CDATA[Бесплатная система веб-аналитики с открытым исходным кодом.]]></phrase>
+  </phrases>
+  <route_prefixes/>
+  <style_properties/>
+  <templates>
+    <template title="csiXF_piwik_trackingCode" version_id="1" version_string="1.0.0"><![CDATA[{xen:raw $xenOptions.csiXF_piwik_trackingCode}]]></template>
+  </templates>
+  <public_template_modifications>
+    <modification template="PAGE_CONTAINER" modification_key="csiXF_piwik_trackingCode" description="Добавление шаблона &quot;csiXF_piwik_trackingCode&quot;" execution_order="10" enabled="1" action="str_replace">
+      <find><![CDATA[</body>]]></find>
+      <replace><![CDATA[<xen:include template="csiXF_piwik_trackingCode" />
+$0]]></replace>
+    </modification>
+  </public_template_modifications>
+  <bb_code_media_sites/>
+  <bb_codes/>
+</addon>
